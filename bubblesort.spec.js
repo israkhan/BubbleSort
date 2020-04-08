@@ -17,16 +17,16 @@ describe("Bubble Sort", function () {
   //   spyOn(sortingFunc, "swap");
   // });
 
-  it("handles an empty array", function () {
+  xit("handles an empty array", function () {
     expect(sortingFunc.bubbleSort([])).toEqual([]);
   });
 
-  it("handles an array with 1 item", function () {
+  xit("handles an array with 1 item", function () {
     const array = [5];
     expect(sortingFunc.bubbleSort(array)).toEqual([5]);
   });
 
-  it("handles an array with multiple items", function () {
+  xit("handles an array with multiple items", function () {
     expect(sortingFunc.bubbleSort([5, 2, 3, 6, 4, 9, 1])).toEqual([
       1,
       2,
@@ -38,7 +38,7 @@ describe("Bubble Sort", function () {
     ]);
   });
 
-  it("return the number of swaps required to sort an array", function () {
+  xit("return the number of swaps required to sort an array", function () {
     sortingFunc.bubbleSort([2, 60, 24, 13]);
     expect(sortingFunc.swap.calls.any()).toEqual(true);
     expect(sortingFunc.swap.calls.count()).toEqual(7);
